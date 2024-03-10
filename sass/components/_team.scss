@@ -37,6 +37,6 @@
 }
 
 .social-media{
-    @include socialMedia($icon-color, $primary-white-color, $accent-color);
+    @include socialMedia($icon-color, $primary-white-color, $primary-white-color, $accent-color);
     margin: 0 32px 30px;
 }
