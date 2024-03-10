@@ -1,0 +1,61 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/placeholders';
+
+.team-section.section{
+    @include sections($second-bck-color);
+}
+
+.team-list{
+    @extend %container;
+    @extend %list;
+    @extend %doFlex;
+
+    &-item{
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 0px 0px 4px 4px;
+        background-color: $primary-white-color;
+        
+        &-title{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: $title-text-color;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.48px;
+        }
+        &-position{
+            text-align: center;
+            letter-spacing: 0.48px;
+            margin-bottom: 16px;
+        }
+    }
+    &-item + &-item{
+        margin-left: 30px;
+    }
+}
+
+.social-media{
+    @extend %list;
+    padding: 0;
+    @extend %doFlex;
+    margin: 0 44px 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 182px;
+}
+.socmed-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    color: $icon-color;
+
+    @include useTransition(color);
+    @include useTransition(background-color);
+    &:hover, &:focus{
+        color: $primary-white-color;
+        background-color: $accent-color;
+      }
+}
