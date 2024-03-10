@@ -2,13 +2,16 @@
 @import '../utils/variables';
 @import '../utils/placeholders';
 
+header{
+    border-bottom: solid 1px #ECECEC;
+}
 
 .main-nav{
     @extend %container;
     @extend %doFlex;
     align-items: center;
 }
-.nav-list{
+.navigation{
     @extend %list;
     @extend %doFlex;
     align-items: center;
@@ -72,7 +75,7 @@
             fill: currentColor;
             margin-right: 10px;
         }
-        &-inflink{
+        &-link{
             color: currentColor;
             @extend %link;
 
@@ -84,8 +87,9 @@
             color: $accent-color;
         }
     }
+    
     &-item + &-item{
         margin-left: 50px;
     }
-
+    
 }

@@ -22,16 +22,16 @@
     }
     &-container{
         position: relative;
-        &-btn{
-            margin-left: 12px;
-            height: 50px;
-            @include buttonType(62px 10px 28px);
-            @include useTransition(background-color);
-        }
-        &-icon{
-            position: absolute;
-            right: 28px;
-            top: 13px;
-        }
+    }
+    &-btn{
+        margin-left: 12px;
+        height: 50px;
+        @include buttonType(62px 10px 28px);
+        @include useTransition(background-color);
+    }
+    &-icon{
+        position: absolute;
+        right: 28px;
+        top: 13px;
     }
 }

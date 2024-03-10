@@ -6,8 +6,7 @@
     @extend %doFlex;
     @extend %list;
     @extend %container;
-    width: 1170px;
-    justify-content: space-between;
+    column-gap: 30px;
     margin-bottom: 94px;
 
     &-item{

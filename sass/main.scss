@@ -1,15 +1,24 @@
 @import './utils/variables';
 @import './components/logo';
-@import './components/navigation';
+@import './components/common';
+@import './components/nav_header';
+
 @import './components/hero';
+@import './components/backdrop';
+@import './components/form';
+
 @import './components/advantages';
 @import './components/examples';
 @import './components/team';
 @import './components/clients';
+
 @import './components/nav_footer';
-@import './components/common';
 @import './components/soc_footer';
 @import './components/subscribe_footer';
+
+@import './components/portfolio_filter';
+@import './components/portfolio_works';
+
 
 html{
     box-sizing: border-box;
@@ -30,12 +39,9 @@ p, a{
     margin: 0;
 }
   
-header{
-    border-bottom: solid 1px #ECECEC;
-}
 
-footer {
-    background-color: $bck-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
+
+
+
+
