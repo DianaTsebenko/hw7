@@ -17,19 +17,20 @@ footer {
 }
 .address-title{
     margin-top: 20px;
+    @extend %doFlex;
+    flex-direction: column;
+    color: $primary-white-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    &-link{
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.6);
 
-  color: $primary-white-color;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-  &-link{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-
-    @include useTransition(color);
-    &:hover, &:focus{
-        color: $accent-color;
+      @include useTransition(color);
+      &:hover, &:focus{
+          color: $accent-color;
+      }
     }
-  }
 }
